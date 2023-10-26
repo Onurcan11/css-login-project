@@ -1,0 +1,81 @@
+body{
+    --primary-color:rgba(42, 104, 42, 0.9);
+    --scondary-color: rgba(32, 32, 91, 0.9);
+    --error-color: red;
+    --correct-color: green;
+    background: linear-gradient(to right, var(--primary-color), var(--scondary-color)), url(image.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 400px;
+    max-height: 700px;
+    padding: 2rem;
+    margin: 1rem;
+    margin-top: 10%;
+    box-shadow: 0 0 40px rgb(0, 0, 0, 0.8);
+    border-radius: 5%;
+    background-color: rgba(255,255,255, 0.8);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.form_title{
+    text-align: center;
+    color: black;
+    margin-top: 8px;
+    font-size: 40px;
+}
+input{
+    margin: 0.7rem;
+    width: 80%;
+    height: 25px; 
+    border-radius: 5%;
+    background-color: rgb(247, 246, 245);
+    padding: 5px;
+    outline: none;
+    border: 2px solid rgb(221, 214, 214);
+}
+input:focus{
+    border-color: green;
+}
+p{
+    display:flex;
+    margin: 5px;
+    text-align: center;
+    justify-content: center;
+}
+button {
+    width: 80%;
+    height: 40px;
+    background-color: rgb(159, 216, 216);
+    border: none;
+    border-radius: 5%;
+    font-weight: 600;
+    font-size:1.3rem;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(126, 170, 126);
+}
+button:active {
+    transform: scale(0.97);
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 0.7rem;
+    color: rgb(0, 76, 0);
+}
+a:hover {
+    font-weight: 700;
+}
